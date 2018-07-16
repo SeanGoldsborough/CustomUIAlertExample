@@ -15,9 +15,18 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func incompleteFormButtonTapped(_ sender: AlertButton) {
+        Alert.showIncompleteFormAlert(on: self)
+    }
+    
+    
+    @IBAction func invalidEmailButtonTapped(_ sender: AlertButton) {
+        Alert.showInvalidEmailAlert(on: self)
+    }
+    
+    
+    @IBAction func unableToRetrieveDataButtonTapped(_ sender: AlertButton) {
+        Alert.showUnableToRetrieveDataAlert(on: self)
     }
 
 

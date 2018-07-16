@@ -1,23 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BFY-c2-Mgz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="j80-ip-rlm">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="BFY-c2-Mgz" customClass="ViewController" customModule="Alert_Refactor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M52-to-mf1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1Z-Zj-orq" customClass="AlertButton" customModule="Alert_Refactor" customModuleProvider="target">
+                                <rect key="frame" x="57.5" y="208.5" width="260" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XAM-If-wM0"/>
+                                    <constraint firstAttribute="width" constant="260" id="myL-XM-iCg"/>
+                                </constraints>
+                                <state key="normal" title="Incomplete Form"/>
+                                <connections>
+                                    <action selector="incompleteFormButtonTapped:" destination="BFY-c2-Mgz" eventType="touchUpInside" id="y5X-er-knW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYd-pJ-k2W" customClass="AlertButton" customModule="Alert_Refactor" customModuleProvider="target">
+                                <rect key="frame" x="57.5" y="308.5" width="260" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="QO5-oJ-DCo"/>
+                                    <constraint firstAttribute="height" constant="50" id="g0x-5E-BvN"/>
+                                </constraints>
+                                <state key="normal" title="Invalid Email"/>
+                                <connections>
+                                    <action selector="invalidEmailButtonTapped:" destination="BFY-c2-Mgz" eventType="touchUpInside" id="8Vg-Mn-tWy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Vc-Bd-99g" customClass="AlertButton" customModule="Alert_Refactor" customModuleProvider="target">
+                                <rect key="frame" x="57.5" y="408.5" width="260" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="0Jf-Yh-8Tf"/>
+                                    <constraint firstAttribute="height" constant="50" id="q6k-TH-0bV"/>
+                                </constraints>
+                                <state key="normal" title="Unable To Retrieve Data"/>
+                                <connections>
+                                    <action selector="unableToRetrieveDataButtonTapped:" destination="BFY-c2-Mgz" eventType="touchUpInside" id="K4u-y4-OwA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7Vc-Bd-99g" firstAttribute="centerX" secondItem="M52-to-mf1" secondAttribute="centerX" id="43M-JG-xBC"/>
+                            <constraint firstItem="uYd-pJ-k2W" firstAttribute="centerX" secondItem="M52-to-mf1" secondAttribute="centerX" id="4f9-zm-box"/>
+                            <constraint firstItem="uYd-pJ-k2W" firstAttribute="top" secondItem="g1Z-Zj-orq" secondAttribute="bottom" constant="50" id="D8c-aj-aMy"/>
+                            <constraint firstItem="g1Z-Zj-orq" firstAttribute="centerX" secondItem="M52-to-mf1" secondAttribute="centerX" id="SLf-hu-rsc"/>
+                            <constraint firstItem="7Vc-Bd-99g" firstAttribute="top" secondItem="uYd-pJ-k2W" secondAttribute="bottom" constant="50" id="YdS-WE-zVc"/>
+                            <constraint firstItem="uYd-pJ-k2W" firstAttribute="centerY" secondItem="M52-to-mf1" secondAttribute="centerY" id="aJ1-P2-g2M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZV8-SK-bUq"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQb-rW-E5t" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>

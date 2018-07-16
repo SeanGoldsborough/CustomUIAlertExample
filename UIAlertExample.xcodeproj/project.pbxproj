@@ -13,6 +13,9 @@
 		C61D0B1120FD2441009F5A8D /* UIAlertExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C61D0B0F20FD2441009F5A8D /* UIAlertExample.xcdatamodeld */; };
 		C61D0B1320FD2443009F5A8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61D0B1220FD2443009F5A8D /* Assets.xcassets */; };
 		C61D0B1620FD2443009F5A8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61D0B1420FD2443009F5A8D /* LaunchScreen.storyboard */; };
+		C61D0B1E20FD253A009F5A8D /* AlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61D0B1D20FD253A009F5A8D /* AlertButton.swift */; };
+		C61D0B2020FD2572009F5A8D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61D0B1F20FD2572009F5A8D /* Constants.swift */; };
+		C61D0B2220FD263B009F5A8D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61D0B2120FD263B009F5A8D /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		C61D0B1220FD2443009F5A8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C61D0B1520FD2443009F5A8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C61D0B1720FD2443009F5A8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C61D0B1D20FD253A009F5A8D /* AlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertButton.swift; sourceTree = "<group>"; };
+		C61D0B1F20FD2572009F5A8D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C61D0B2120FD263B009F5A8D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			children = (
 				C61D0B0820FD2441009F5A8D /* AppDelegate.swift */,
 				C61D0B0A20FD2441009F5A8D /* ViewController.swift */,
+				C61D0B1D20FD253A009F5A8D /* AlertButton.swift */,
+				C61D0B1F20FD2572009F5A8D /* Constants.swift */,
+				C61D0B2120FD263B009F5A8D /* Alert.swift */,
 				C61D0B0C20FD2441009F5A8D /* Main.storyboard */,
 				C61D0B1220FD2443009F5A8D /* Assets.xcassets */,
 				C61D0B1420FD2443009F5A8D /* LaunchScreen.storyboard */,
@@ -138,6 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C61D0B2220FD263B009F5A8D /* Alert.swift in Sources */,
+				C61D0B2020FD2572009F5A8D /* Constants.swift in Sources */,
+				C61D0B1E20FD253A009F5A8D /* AlertButton.swift in Sources */,
 				C61D0B0B20FD2441009F5A8D /* ViewController.swift in Sources */,
 				C61D0B0920FD2441009F5A8D /* AppDelegate.swift in Sources */,
 				C61D0B1120FD2441009F5A8D /* UIAlertExample.xcdatamodeld in Sources */,
