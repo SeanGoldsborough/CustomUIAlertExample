@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BFY-c2-Mgz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rSM-vS-oUv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,12 +13,12 @@
         <!--View Controller-->
         <scene sceneID="j80-ip-rlm">
             <objects>
-                <viewController id="BFY-c2-Mgz" customClass="ViewController" customModule="Alert_Refactor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BFY-c2-Mgz" customClass="ViewController" customModule="UIAlertExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M52-to-mf1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1Z-Zj-orq" customClass="AlertButton" customModule="Alert_Refactor" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1Z-Zj-orq" customClass="AlertButton" customModule="UIAlertExample" customModuleProvider="target">
                                 <rect key="frame" x="57.5" y="208.5" width="260" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="XAM-If-wM0"/>
@@ -29,7 +29,7 @@
                                     <action selector="incompleteFormButtonTapped:" destination="BFY-c2-Mgz" eventType="touchUpInside" id="y5X-er-knW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYd-pJ-k2W" customClass="AlertButton" customModule="Alert_Refactor" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYd-pJ-k2W" customClass="AlertButton" customModule="UIAlertExample" customModuleProvider="target">
                                 <rect key="frame" x="57.5" y="308.5" width="260" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="QO5-oJ-DCo"/>
@@ -40,7 +40,7 @@
                                     <action selector="invalidEmailButtonTapped:" destination="BFY-c2-Mgz" eventType="touchUpInside" id="8Vg-Mn-tWy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Vc-Bd-99g" customClass="AlertButton" customModule="Alert_Refactor" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Vc-Bd-99g" customClass="AlertButton" customModule="UIAlertExample" customModuleProvider="target">
                                 <rect key="frame" x="57.5" y="408.5" width="260" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="0Jf-Yh-8Tf"/>
@@ -51,21 +51,56 @@
                                     <action selector="unableToRetrieveDataButtonTapped:" destination="BFY-c2-Mgz" eventType="touchUpInside" id="K4u-y4-OwA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3H1-9I-a90" customClass="AlertButton" customModule="UIAlertExample" customModuleProvider="target">
+                                <rect key="frame" x="57" y="508.5" width="260" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="Eag-xE-yya"/>
+                                    <constraint firstAttribute="height" constant="50" id="Xxe-eK-H7c"/>
+                                    <constraint firstAttribute="width" constant="260" id="czd-ZA-zJS"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="stJ-Pi-XYG"/>
+                                </constraints>
+                                <state key="normal" title="Show Map"/>
+                                <connections>
+                                    <action selector="unableToRetrieveDataButtonTapped:" destination="BFY-c2-Mgz" eventType="touchUpInside" id="2vr-Lj-cLe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="7Vc-Bd-99g" firstAttribute="centerX" secondItem="M52-to-mf1" secondAttribute="centerX" id="43M-JG-xBC"/>
                             <constraint firstItem="uYd-pJ-k2W" firstAttribute="centerX" secondItem="M52-to-mf1" secondAttribute="centerX" id="4f9-zm-box"/>
                             <constraint firstItem="uYd-pJ-k2W" firstAttribute="top" secondItem="g1Z-Zj-orq" secondAttribute="bottom" constant="50" id="D8c-aj-aMy"/>
+                            <constraint firstItem="3H1-9I-a90" firstAttribute="top" secondItem="7Vc-Bd-99g" secondAttribute="bottom" constant="50" id="Pj3-pf-KSV"/>
                             <constraint firstItem="g1Z-Zj-orq" firstAttribute="centerX" secondItem="M52-to-mf1" secondAttribute="centerX" id="SLf-hu-rsc"/>
                             <constraint firstItem="7Vc-Bd-99g" firstAttribute="top" secondItem="uYd-pJ-k2W" secondAttribute="bottom" constant="50" id="YdS-WE-zVc"/>
                             <constraint firstItem="uYd-pJ-k2W" firstAttribute="centerY" secondItem="M52-to-mf1" secondAttribute="centerY" id="aJ1-P2-g2M"/>
+                            <constraint firstItem="3H1-9I-a90" firstAttribute="centerX" secondItem="M52-to-mf1" secondAttribute="centerX" id="aJ8-n8-NdH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZV8-SK-bUq"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Xds-fs-0uP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sQb-rW-E5t" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4qH-6k-ghz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rSM-vS-oUv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Wk-nr-KgZ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BFY-c2-Mgz" kind="relationship" relationship="rootViewController" id="17y-fM-IL0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M8M-Ac-jul" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="222" y="134"/>
         </scene>
     </scenes>
 </document>
