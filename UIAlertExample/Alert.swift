@@ -12,6 +12,8 @@ import UIKit
 struct Alert {
     
     private static func showBasicAlert(on vc: UIViewController, with title: String, message: String) {
+        
+        //TODO: Change alert size/font/font color
        
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
