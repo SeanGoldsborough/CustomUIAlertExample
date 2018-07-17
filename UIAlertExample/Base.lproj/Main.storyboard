@@ -61,7 +61,6 @@
                                 </constraints>
                                 <state key="normal" title="Show Map"/>
                                 <connections>
-                                    <action selector="unableToRetrieveDataButtonTapped:" destination="BFY-c2-Mgz" eventType="touchUpInside" id="aFb-UV-22l"/>
                                     <segue destination="wnr-tR-yWi" kind="show" id="wA1-tl-Oe3"/>
                                 </connections>
                             </button>
