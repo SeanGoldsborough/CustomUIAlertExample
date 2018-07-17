@@ -12,18 +12,15 @@ import UIKit
 struct Alert {
     
     private static func showBasicAlert(on vc: UIViewController, with title: String, message: String) {
-        // Change Title With Color and Font:
-        
-        let myString  = "Alert Title"
-        var myMutableString = NSMutableAttributedString()
        
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        
         // change the background color
         let subview = (alert.view.subviews.first?.subviews.first?.subviews.first!)! as UIView
         subview.layer.cornerRadius = 1
         
-        subview.backgroundColor = UIColor.brown
+        subview.backgroundColor = UIColor.blue
         
         DispatchQueue.main.async { vc.present(alert, animated: true) }
     }
