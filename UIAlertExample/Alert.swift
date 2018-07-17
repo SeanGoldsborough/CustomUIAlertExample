@@ -31,7 +31,7 @@ struct Alert {
     static func showIncompleteFormAlert(on vc: UIViewController) {
         showBasicAlert(on: vc, with: "Ugly Alert Code", message: "You should really refactor this")
     }
-    
+    //TODO: Make this alert slide up from bottom
     static func showInvalidEmailAlert(on vc: UIViewController) {
         showBasicAlert(on: vc, with: "Invalid Email", message: "Please use a correct email")
     }
